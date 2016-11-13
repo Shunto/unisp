@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :attendances
+  resources :reports
   resources :contents
   resources :subjects
   devise_for :users
