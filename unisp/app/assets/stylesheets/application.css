@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+
+ body {background: #00FFFF;}
+ h1.title{
+     font-size: 50px;
+     color: #0000FF;
+     font-family:"ＭＳ Ｐゴシック",Meiryo,sans-serif;
+}
+/*td, th {
+    border: 2px #ff0000 solid;
+}*/
+

@@ -1,8 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Your Point</strong>
+    <% @total = 0 %>
+    <% @subjects.each do |subject| %>
+       <% @total+=subject.report.mypoint>
+    <% end %>
+</p>
+       
+<p>
   <strong>Name:</strong>
   <%= @subject.name %>
+  <%= @subject.report.name %>
 </p>
 
 <p>
@@ -15,5 +24,3 @@
   <%= @subject.maxpoint %>
 </p>
 
-<%= link_to 'Edit', edit_subject_path(@subject) %> |
-<%= link_to 'Back', subjects_path %>
