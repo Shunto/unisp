@@ -16,6 +16,9 @@
    <% @subject.reports.each do |report|  %>
      <p><%=report.mypoint%></p>
      <%end%>
+     <% @subject.attendances.each do |attendance|  %>
+       <p><%=attendance.state%></p>
+       <%end%>
    <%end%>
 </p>
 
