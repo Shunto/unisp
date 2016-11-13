@@ -7,13 +7,15 @@
        <% @total+=subject.report.mypoint>
     <% end %>
 </p>
-       
+
 <p>
   <strong>Name:</strong>
   <%= @subject.name %>
-  <%= @subject.report.name %>
    <% @subject.contents.each do |content|  %>
    <p><%=content.name%></p>
+   <% @subject.reports.each do |report|  %>
+     <p><%=report.mypoint%></p>
+     <%end%>
    <%end%>
 </p>
 
@@ -26,4 +28,3 @@
   <strong>Maxpoint:</strong>
   <%= @subject.maxpoint %>
 </p>
-
