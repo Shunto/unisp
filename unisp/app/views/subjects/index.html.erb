@@ -12,7 +12,8 @@
   </thead>
 
   <tbody>
-      <% @subject.reports.each do |report|  %>
+      <% @subjects.each do |subject| %>
+      <% subject.reports.each do |report|  %>
       <tr>
         <td><%=report.name%></td>
         <%end%>
