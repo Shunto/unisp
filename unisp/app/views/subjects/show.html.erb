@@ -11,7 +11,13 @@
 <p>
   <strong>Name:</strong>
   <%= @subject.name %>
+<<<<<<< HEAD
   <%= @subject.report.name %>
+=======
+   <% @subject.contents.each do |content|  %>
+   <p><%=content.name%></p>
+   <%end%>
+>>>>>>> refs/remotes/origin/master
 </p>
 
 <p>

@@ -14,7 +14,11 @@ class SubjectsController < ApplicationController
   # GET /subjects/1
   # GET /subjects/1.json
   def show
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> refs/remotes/origin/master
   end
 
   # GET /subjects/new
