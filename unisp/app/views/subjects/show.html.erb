@@ -3,6 +3,9 @@
 <p>
   <strong>Name:</strong>
   <%= @subject.name %>
+   <% @subject.contents.each do |content|  %>
+   <p><%=content.name%></p>
+   <%end%>
 </p>
 
 <p>
