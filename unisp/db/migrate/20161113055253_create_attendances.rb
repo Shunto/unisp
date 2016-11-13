@@ -1,7 +1,7 @@
 class CreateAttendances < ActiveRecord::Migration[5.0]
   def change
     create_table :attendances do |t|
-      t.bool :state
+      t.boolean :state
       t.integer :user_id
 
       t.timestamps
